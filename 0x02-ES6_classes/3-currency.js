@@ -1,5 +1,3 @@
-s (21 sloc)  359 Bytes
-
 export default class Currency {
   constructor(code, name) {
     this.code = code;
