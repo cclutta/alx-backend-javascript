@@ -15,6 +15,18 @@ export default class Pricing {
   }
 
   get currency() {
-    
+    return this._currency;
+  }
+
+  set currency(newCurrency) {
+    this._currency = newCurrency;
+  }
+
+  displayFullPrice() {
+    return `${this.amount} ${this.currency.name} (${this.currency.code})`;
+  }
+
+  static convertPrice(amount, conversionRate) {
+    return conversionRate * amount;
   }
 }
