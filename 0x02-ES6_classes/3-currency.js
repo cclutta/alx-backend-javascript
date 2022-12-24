@@ -1,3 +1,5 @@
+s (21 sloc)  359 Bytes
+
 export default class Currency {
   constructor(code, name) {
     this.code = code;
@@ -15,12 +17,12 @@ export default class Currency {
   get name() {
     return this._name;
   }
-  
+
   set name(newName) {
     this._name = newName;
   }
-  
+
   displayFullCurrency() {
-      return `${this.name} (${this.code})`;
+    return `${this.name} (${this.code})`;
   }
 }
