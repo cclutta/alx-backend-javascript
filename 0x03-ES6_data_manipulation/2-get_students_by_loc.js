@@ -7,4 +7,3 @@ export default function getStudentsByLocation(listStudents, city) {
 
   return output;
 }
-
